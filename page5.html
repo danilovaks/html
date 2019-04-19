@@ -11,28 +11,40 @@
             <li><a href="index.html">Главная страница</a></li>
             <li><a href="page2.html">Изображения</a></li>
             <li><a href="page3.html">Описание</a></li>
-            <li><a href="#">Авториризация</a></li>
-            <li><a href="page5.html">Регистрация</a></li>
+            <li><a href="page4.html">Авториризация</a></li>
+            <li><a href="#">Регистрация</a></li>
         </ul>
         <form action="#" method="POST"
             enctype="multipart/form-data"
-            autocomplete="on">
+            autocomplete="on"
+            style="background: url(img/Tbaikal.jpg) no-repeat 0 -25px; width: 500px; opacity: 0.8;">
             <fieldset style="border: 0 none;">
-                <legend>Авторизация</legend>
-                <input type="email" 
-                    value="tulen@gmail.com" 
-                    placeholder="Адрес электронной почты"
+                <legend>Регистрация</legend>
+                <input type="text" 
+                    placeholder="Логин"
+                    minlength="4" maxlength="15"
                     style="width: 250px;">
                 <br>
-                <input type="password" 
-                    placeholder="Пароль"
+                <input type="email" 
+                    placeholder="Адрес электронной почты"
+                    value="tulen@gmail.com" 
+                    style="width: 250px;">
+                <br>
+                <input type="password"
+                    placeholder="Пароль" 
+                    minlength="5" maxlength="10" 
+                    style="width: 250px;">
+                <br>
+                <input type="password"
+                    placeholder="Потдтверждение пароля"
+                    minlength="5" maxlength="10" 
                     style="width: 250px;">
             </fieldset>
             <fieldset style="border: 0 none;">
-                <label><input checked type="checkbox">Запомнить меня</label>
-                <a href="#">Забыли пароль?</a>
+                <a href="#" style="color: black;">Войти</a>
                 <br>
-                <input type="submit" value="Войти" style="width: 100px; height: 30px;">
+                <input type="submit" value="Зарегистрироваться" 
+                    style="width: 200px; height: 30px;">
             </fieldset>
         </form>
     </body>  
