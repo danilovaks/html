@@ -43,6 +43,10 @@ body {
 }
 
 .indent {
+	padding-top: 50px;
+}
+
+.form {
 	margin: 0 auto;
 	padding: 10px;
 	padding-top: 50px;
@@ -52,38 +56,38 @@ body {
 	color: white;
 }
 
-.indent h2 {
+.form h2 {
 	margin-left: 50px;
 }
 
-.indent fieldset  {
+.form fieldset  {
 	border: 0 none;
 	padding: 10px;
 }
 
-.indent legend {
+.form legend {
 	padding: 5px;
 }
 
-.indent input:not([type="radio"]), 
-.indent select  {
+.form input:not([type="radio"]), 
+.form select  {
 	width: 250px;
 	padding: 10px;
 }
 
-.indent input[type="checkbox"] {
+.form input[type="checkbox"] {
 	width: 25px;
 }
 
-.indent textarea {
+.form textarea {
 	margin-top: 5px;
 	width: 180px;
 	padding: 5px;
 }
 
-.indent .sumbit {
+.form .sumbit {
 	margin-top: 15px;
-	width: 270px; 
+	width: 270px; /*Почему это свойстов не работает на странице 4 и 5?*/
 	height: 50px;
 }
 
