@@ -16,85 +16,87 @@
             <li><a href="page5.html">Регистрация</a></li>
             <li><a href="#">Волотенрство</a></li>
         </ul>
-        <h2>Анкета волонтера</h2>
-        <form action="#" method="POST"
-            enctype="multipart/form-data"
-            autocomplete="on">
-            <fieldset>
-                <legend><strong>Представтесь, пожалуйста</strong></legend>
-                <legend>Фамилия</legend>
-                <input type="text" 
-                    placeholder="Мой ответ"
-                    required>
-                <br>
-                <legend>Имя</legend>
-                <input type="text" 
-                    placeholder="Мой ответ"
-                    required>
-                <br>
-                <legend>Дата рождения</legend>
-                <input type="date" required>
-                <br>
-                <legend>Пол</legend>
-                <select size="1">
-                    <option selected>Выбрать</option>
-                    <option>Женский</option>
-                    <option>Мужской</option>
-                </select>
-                <br>
-                <legend>Адрес электронной почты</legend>
-                <input type="email" 
-                    placeholder="Мой ответ"
-                    value="tulen@gmail.com" 
-                    required>
-                <br>
-                <legend>Номер телефона</legend>
-                <input type="text" 
-                    placeholder="Мой ответ"
-                    required>
-                <br>
-                <legend>Город проживания</legend>
-                <input type="text" 
-                    placeholder="Мой ответ"
-                    required>
-                <br>
-                <legend>Загрузить готовую анкету</legend>
-                <input type="file" multiple accept="txt/*">
-            </fieldset>
-            <fieldset>
-                <legend><strong>Давайте поговорим о волонтерстве</strong></legend>
-                <legend>Почему вы решили стать волонтером?</legend>
-                <input type="text" 
-                    placeholder="Мой ответ"
-                    minlength="10">
-                <br>
-                <legend>Как Вы узнали о волонтерском проекте?</legend>
-                    <label>
-                        <input name="answer" type="radio" value="1" checked>Из рекламы в метро
-                    </label>
+        <div class="indent">
+            <h2>Анкета волонтера</h2>
+            <form action="#" method="POST"
+                enctype="multipart/form-data"
+                autocomplete="on">
+                <fieldset>
+                    <legend><strong>Представтесь, пожалуйста</strong></legend>
+                    <legend>Фамилия</legend>
+                    <input type="text" 
+                        placeholder="Мой ответ"
+                        required>
                     <br>
-                    <label>
-                        <input name="answer" type="radio" value="2" checked>От друзей, знакомых
-                    </label>
+                    <legend>Имя</legend>
+                    <input type="text" 
+                        placeholder="Мой ответ"
+                        required>
                     <br>
-                    <label>
-                        <input name="answer" type="radio" value="3" checked>В социальных сетях
-                    </label>
+                    <legend>Дата рождения</legend>
+                    <input type="date" required>
                     <br>
-                    <label>
-                        <input name="answer" type="radio" value="4" checked>Специально искал в интернете
-                    </label>
+                    <legend>Пол</legend>
+                    <select size="1">
+                        <option selected>Выбрать</option>
+                        <option>Женский</option>
+                        <option>Мужской</option>
+                    </select>
                     <br>
-                    <label>
-                        <input name="answer" type="radio" value="5" checked>Другое:
-                        <textarea cols="20" rows="1" placeholder="Мой ответ" required></textarea>
-                    </label>
-            </fieldset>
-            <fieldset>
-                <legend>Даю согласие на обработку моих персональных данных</legend>
-                <label><input required type="checkbox">Да</label>
-                <button type="submit">Отправить</button>
-            </fieldset>
-        </form>
+                    <legend>Адрес электронной почты</legend>
+                    <input type="email" 
+                        placeholder="Мой ответ"
+                        value="tulen@gmail.com" 
+                        required>
+                    <br>
+                    <legend>Номер телефона</legend>
+                    <input type="text" 
+                        placeholder="Мой ответ"
+                        required>
+                    <br>
+                    <legend>Город проживания</legend>
+                    <input type="text" 
+                        placeholder="Мой ответ"
+                        required>
+                    <br>
+                    <legend>Загрузить готовую анкету</legend>
+                    <input type="file" multiple accept="txt/*">
+                </fieldset>
+                <fieldset>
+                    <legend><strong>Давайте поговорим о волонтерстве</strong></legend>
+                    <legend>Почему вы решили стать волонтером?</legend>
+                    <input type="text" 
+                        placeholder="Мой ответ"
+                        minlength="10">
+                    <br>
+                    <legend>Как Вы узнали о волонтерском проекте?</legend>
+                        <label>
+                            <input name="answer" type="radio" value="1" checked>Из рекламы в метро
+                        </label>
+                        <br>
+                        <label>
+                            <input name="answer" type="radio" value="2" checked>От друзей, знакомых
+                        </label>
+                        <br>
+                        <label>
+                            <input name="answer" type="radio" value="3" checked>В социальных сетях
+                        </label>
+                        <br>
+                        <label>
+                            <input name="answer" type="radio" value="4" checked>Специально искал в интернете
+                        </label>
+                        <br>
+                        <label>
+                            <input name="answer" type="radio" value="5" checked>Другое:
+                            <textarea cols="20" rows="1" placeholder="Мой ответ" required></textarea>
+                        </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Даю согласие на обработку моих персональных данных</legend>
+                    <label><input required type="checkbox">Да</label>
+                    <button class="sumbit" type="submit">Отправить</button>
+                </fieldset>
+            </form>
+        </div>
     </body>  
 </html>

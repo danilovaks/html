@@ -43,27 +43,48 @@ body {
 }
 
 .indent {
+	margin: 0 auto;
+	padding: 10px;
 	padding-top: 50px;
-}
-
-.indent fieldset {
 	width: 300px;
+	background-color: #369;
+	opacity: 0.9;
+	color: white;
+}
+
+.indent h2 {
+	margin-left: 50px;
+}
+
+.indent fieldset  {
 	border: 0 none;
-	background-color: white;
+	padding: 10px;
 }
 
-.indent input {
+.indent legend {
+	padding: 5px;
+}
+
+.indent input:not([type="radio"]), 
+.indent select  {
 	width: 250px;
+	padding: 10px;
 }
 
-.indent > fieldset > label > input {
-	width: 20px;
+.indent input[type="checkbox"] {
+	width: 25px;
+}
+
+.indent textarea {
+	margin-top: 5px;
+	width: 180px;
+	padding: 5px;
 }
 
 .indent .sumbit {
 	margin-top: 15px;
-	width: 200px; 
-	height: 30px;
+	width: 270px; 
+	height: 50px;
 }
 
 .article p {
