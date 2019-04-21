@@ -1,0 +1,105 @@
+body {
+	margin: 0 auto;
+	background-image: url("../img/baikal.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	padding-left: 20px;
+	list-style-type: none;
+	background-color: white;
+	position: fixed;
+	z-index: 1000;
+	width:100%;
+}
+
+.nav li {
+	display: inline-block;
+	padding: 15px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: black;
+}
+
+.transparent {
+	background-color: #369;
+	padding: 10px;
+	padding-top: 50px;
+	opacity: 0.7;
+	color: white;
+}
+
+.height img {
+	height: 100px;
+	padding: 10px;
+	padding-top: 0;
+}
+
+.indent {
+	padding-top: 50px;
+}
+
+.indent fieldset {
+	width: 300px;
+	border: 0 none;
+	background-color: white;
+}
+
+.indent input {
+	width: 250px;
+}
+
+.indent > fieldset > label > input {
+	width: 20px;
+}
+
+.indent .sumbit {
+	margin-top: 15px;
+	width: 200px; 
+	height: 30px;
+}
+
+.article p {
+	margin: 0;
+	padding: 0;
+}
+
+.article a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+	padding-right: 15px;
+}
+
+.article span {
+	font-size: 14px;
+	color: #DCDCDC;
+}
+
+.article img {
+	display: block;
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+	height: 150px;
+}
+
+.article .button {
+	margin-top: 15px;
+	display: block;
+	height: 30px;
+	width: 150px;
+	background-color: #163674;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}

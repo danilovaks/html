@@ -1,56 +1,100 @@
-<!DOCTYPE html><!--описание типа документа-->
-<html lang="ru"><!--начало нашего документа-->
-    <head><!--Тег заголовка документа-->
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
         <title>Тюлени</title>
         <meta charset="UTF-8">
         <meta name="description" content="Сайт о тюленях">
         <meta name="keywords" content="">
         <link rel="stylesheet" href="css/style.css">
     </head>    
-    <body><!--Теги, отвечающие за содержание страницы-->
-        <ul type="none">
+    <body>
+        <ul class="nav">
             <li><a href="index.html">Главная страница</a></li>
             <li><a href="page2.html">Изображения</a></li>
             <li><a href="page3.html">Описание</a></li>
             <li><a href="page4.html">Авториризация</a></li>
-            <li><a href="#">Регистрация</a></li>
+            <li><a href="page5.html">Регистрация</a></li>
+            <li><a href="#">Волотенрство</a></li>
         </ul>
+        <h2>Анкета волонтера</h2>
         <form action="#" method="POST"
             enctype="multipart/form-data"
-            autocomplete="on"
-            style="background: url(img/Tbaikal.jpg) no-repeat 0 -25px; width: 500px; opacity: 0.8;">
-            <fieldset style="border: 0 none;">
-                <legend>Регистрация</legend>
+            autocomplete="on">
+            <fieldset>
+                <legend><strong>Представтесь, пожалуйста</strong></legend>
+                <legend>Фамилия</legend>
                 <input type="text" 
-                    placeholder="Логин"
-                    minlength="4" maxlength="15"
-                    required
-                    style="width: 250px;">
+                    placeholder="Мой ответ"
+                    required>
                 <br>
+                <legend>Имя</legend>
+                <input type="text" 
+                    placeholder="Мой ответ"
+                    required>
+                <br>
+                <legend>Дата рождения</legend>
+                <input type="date" required>
+                <br>
+                <legend>Пол</legend>
+                <select size="1">
+                    <option selected>Выбрать</option>
+                    <option>Женский</option>
+                    <option>Мужской</option>
+                </select>
+                <br>
+                <legend>Адрес электронной почты</legend>
                 <input type="email" 
-                    placeholder="Адрес электронной почты"
+                    placeholder="Мой ответ"
                     value="tulen@gmail.com" 
-                    required
-                    style="width: 250px;">
+                    required>
                 <br>
-                <input type="password"
-                    placeholder="Пароль" 
-                    minlength="5" maxlength="10" 
-                    required
-                    style="width: 250px;">
+                <legend>Номер телефона</legend>
+                <input type="text" 
+                    placeholder="Мой ответ"
+                    required>
                 <br>
-                <input type="password"
-                    placeholder="Потдтверждение пароля"
-                    minlength="5" maxlength="10" 
-                    required
-                    style="width: 250px;">
+                <legend>Город проживания</legend>
+                <input type="text" 
+                    placeholder="Мой ответ"
+                    required>
+                <br>
+                <legend>Загрузить готовую анкету</legend>
+                <input type="file" multiple accept="txt/*">
             </fieldset>
-            <fieldset style="border: 0 none;">
-                <a href="#" style="color: black;">Войти</a>
+            <fieldset>
+                <legend><strong>Давайте поговорим о волонтерстве</strong></legend>
+                <legend>Почему вы решили стать волонтером?</legend>
+                <input type="text" 
+                    placeholder="Мой ответ"
+                    minlength="10">
                 <br>
-                <input type="submit" value="Зарегистрироваться" 
-                    style="width: 200px; height: 30px;">
+                <legend>Как Вы узнали о волонтерском проекте?</legend>
+                    <label>
+                        <input name="answer" type="radio" value="1" checked>Из рекламы в метро
+                    </label>
+                    <br>
+                    <label>
+                        <input name="answer" type="radio" value="2" checked>От друзей, знакомых
+                    </label>
+                    <br>
+                    <label>
+                        <input name="answer" type="radio" value="3" checked>В социальных сетях
+                    </label>
+                    <br>
+                    <label>
+                        <input name="answer" type="radio" value="4" checked>Специально искал в интернете
+                    </label>
+                    <br>
+                    <label>
+                        <input name="answer" type="radio" value="5" checked>Другое:
+                        <textarea cols="20" rows="1" placeholder="Мой ответ" required></textarea>
+                    </label>
+            </fieldset>
+            <fieldset>
+                <legend>Даю согласие на обработку моих персональных данных</legend>
+                <label><input required type="checkbox">Да</label>
+                <button type="submit">Отправить</button>
             </fieldset>
         </form>
     </body>  
-</html><!--конец нашего документа-->
+</html>

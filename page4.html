@@ -8,34 +8,34 @@
         <link rel="stylesheet" href="css/style.css">
     </head>    
     <body><!--Теги, отвечающие за содержание страницы-->
-        <ul type="none">
+        <ul class="nav">
             <li><a href="index.html">Главная страница</a></li>
             <li><a href="page2.html">Изображения</a></li>
             <li><a href="page3.html">Описание</a></li>
             <li><a href="#">Авториризация</a></li>
             <li><a href="page5.html">Регистрация</a></li>
+            <li><a href="page6.html">Волотенрство</a></li>
         </ul>
-        <form action="#" method="POST"
+        <form class="indent"
+            action="#" method="POST"
             enctype="multipart/form-data"
             autocomplete="on">
-            <fieldset style="border: 0 none;">
+            <fieldset>
                 <legend>Авторизация</legend>
                 <input type="email" 
                     value="tulen@gmail.com" 
                     placeholder="Адрес электронной почты"
-                    required
-                    style="width: 250px;">
+                    required>
                 <br>
                 <input type="password" 
                     placeholder="Пароль"
-                    required
-                    style="width: 250px;">
+                    required>
             </fieldset>
-            <fieldset style="border: 0 none;">
+            <fieldset>
                 <label><input checked type="checkbox">Запомнить меня</label>
                 <a href="#">Забыли пароль?</a>
                 <br>
-                <input type="submit" value="Войти" style="width: 100px; height: 30px;">
+                <input class="sumbit" type="submit" value="Войти">
             </fieldset>
         </form>
     </body>  
