@@ -1,7 +1,5 @@
 @import url("./grid.css");
 
-
-
 img {
     height: 200px;
 }
@@ -56,4 +54,21 @@ img {
 .nav a {
     text-decoration: none;
     color: black;
+}
+
+
+
+
+
+.slide {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.slide img {
+    float: left;
+    display: inline-block;
+    height: 80px;
+    padding: 10px;
 }
