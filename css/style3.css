@@ -1,5 +1,6 @@
 .flex {
 	display: flex;
+	height: 100px;
 }
 
 .flex-1 {
@@ -9,17 +10,35 @@
 
 .flex-1 ul {
 	margin: 0;
-	margin-left: 20px;
 	padding: 0;
+	height: 100%;
+	list-style-type: none;
 }
 
-.flex-1 li {
-	list-style-type: none;
+.flex-row > li {
+	display: inline-block;
 	padding: 10px;
+}
+
+.flex-1 a {
+	text-decoration: none;
+	color: black;
+}
+
+.position {
+	position: relative;
 }
 
 .hover {
 	display: none;
+	position: absolute;
+	top: 35px;
+	left: 0;
+}
+
+.hover li {
+	padding: 10px;
+	background-color: rgb(66, 115, 191);
 }
 
 li:hover > .hover {
@@ -38,12 +57,31 @@ li:hover > .hover {
 
 .form1, .form2 {
 	display: none;
+	padding: 10px;
+	position:absolute;
+	top: 105px;
+	background-color: rgb(66, 115, 191);
+	box-shadow: 0 0 70px 1px rgb(60, 60, 60);
 }
 
 .form1:target, .form2:target {
 	display: block;
-	position:absolute;
-	top: 105px;
+}
+
+form {
+	margin: 0;
+	box-shadow: 0 2px 10px 5px rgb(86, 86, 86);
+}
+
+form input {
+	width: 100%;
+}
+
+form a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
 }
 
 .flex-row {
